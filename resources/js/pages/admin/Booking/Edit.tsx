@@ -104,7 +104,7 @@ export default function Edit({ booking, pricing }: Props) {
 
                     <div>
                         <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-                            Phone Number
+                            Phone Number (optional)
                         </label>
                         <input
                             type="tel"

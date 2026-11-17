@@ -70,7 +70,7 @@ class BookingController extends Controller
     {
         $validated = $request->validate([
             'customer_name' => ['required', 'string', 'max:255'],
-            'phone_number'  => ['required', 'string', 'max:20'],
+            'phone_number'  => ['nullable', 'string', 'max:20'],
             'group_type'    => ['required', 'in:adult,teenage,children'],
             'play_game'     => ['required', 'boolean'],
         ]);
@@ -109,7 +109,7 @@ class BookingController extends Controller
     {
         $validated = $request->validate([
             'customer_name' => ['required', 'string', 'max:255'],
-            'phone_number'  => ['required', 'string', 'max:20'],
+            'phone_number'  => ['nullable', 'string', 'max:20'],
             'group_type'    => ['required', 'in:adult,teenage,children'],
             'play_game'     => ['required', 'boolean'],
         ]);

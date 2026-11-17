@@ -93,7 +93,7 @@ export default function Create({ pricing }: Props) {
 
                     <div>
                         <label className="block text-sm font-semibold text-slate-700 mb-1.5">
-                            Phone Number
+                            Phone Number (optional)
                         </label>
                         <input
                             type="tel"
@@ -104,11 +104,11 @@ export default function Create({ pricing }: Props) {
                             placeholder="e.g. 08012345678"
                             className="w-full rounded-xl border-slate-300 border-2 py-2.5 px-3.5 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
                         />
-                        {errors.phone_number && (
+                        {/* {errors.phone_number && (
                             <p className="text-xs text-red-600 mt-1">
                                 {errors.phone_number}
                             </p>
-                        )}
+                        )} */}
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
