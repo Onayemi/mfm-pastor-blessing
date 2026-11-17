@@ -10,6 +10,7 @@ import { Spinner } from "@/components/ui/spinner";
 import { store } from "@/routes/login";
 import { request } from "@/routes/password";
 import PasskeyVerify from "@/components/passkey-verify";
+import AuthSplitLayout from "@/layouts/AuthSplitLayout";
 
 type Props = {
     status?: string;
@@ -18,9 +19,10 @@ type Props = {
 
 export default function Login({ status, canResetPassword }: Props) {
     return (
-        <>
-            <Head title="Log in" />
-
+        <AuthSplitLayout
+            title="Sign in to your account"
+            subtitle="Enter your credentials below to access your claim dashboard."
+        >
             <PasskeyVerify />
 
             <Form
@@ -106,7 +108,7 @@ export default function Login({ status, canResetPassword }: Props) {
                     {status}
                 </div>
             )}
-        </>
+        </AuthSplitLayout>
     );
 }
 
