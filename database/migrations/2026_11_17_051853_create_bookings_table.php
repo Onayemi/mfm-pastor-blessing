@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('ticket_code')->unique();
             $table->string('customer_name');
-            $table->string('phone_number');
+            $table->string('phone_number')->nullable();
             $table->enum('group_type', ['adult', 'teenage', 'children']);
             $table->decimal('base_price', 10, 2);
             $table->boolean('play_game')->default(false);

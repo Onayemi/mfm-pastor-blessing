@@ -38,7 +38,7 @@ export default function AuthSplitLayout({
                             <img
                                 src="/images/logo.png"
                                 alt="Pastor Blessing Logo"
-                                className="h-15 w-auto object-cover"
+                                className="h-20 w-auto object-cover"
                             />
                         </Link>
                     </div>
@@ -66,14 +66,11 @@ export default function AuthSplitLayout({
                     {/* Mobile Header Logo */}
                     <div className="mb-6 flex items-center justify-between lg:hidden">
                         <Link href="/" className="flex items-center space-x-2">
-                            {/* <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">
-                                RS
-                            </div> */}
                             <div className="mx-10">
                                 <img
                                     src="/images/logo.png"
                                     alt="Pastor Blessing Logo"
-                                    className="h-10 w-auto"
+                                    className="h-20 w-auto"
                                 />
                                 <span className="text-lg font-bold text-slate-900 dark:text-white">
                                     MFM Pastor Blessing

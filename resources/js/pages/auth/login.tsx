@@ -1,14 +1,14 @@
 import { Form, Head } from "@inertiajs/react";
 import InputError from "@/components/input-error";
 import PasswordInput from "@/components/password-input";
-import TextLink from "@/components/text-link";
+// import TextLink from "@/components/text-link";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Spinner } from "@/components/ui/spinner";
 import { store } from "@/routes/login";
-import { request } from "@/routes/password";
+// import { request } from "@/routes/password";
 import PasskeyVerify from "@/components/passkey-verify";
 import AuthSplitLayout from "@/layouts/AuthSplitLayout";
 
@@ -93,12 +93,12 @@ export default function Login({ status, canResetPassword }: Props) {
                             </Button>
                         </div>
 
-                        <div className="text-muted-foreground text-center text-sm">
+                        {/* <div className="text-muted-foreground text-center text-sm">
                             Don't have an account?{" "}
                             <TextLink href="/register" tabIndex={5}>
                                 Sign up
                             </TextLink>
-                        </div>
+                        </div> */}
                     </>
                 )}
             </Form>

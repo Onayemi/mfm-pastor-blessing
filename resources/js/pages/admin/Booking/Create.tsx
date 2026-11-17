@@ -14,7 +14,7 @@ interface Props {
 export default function Create({ pricing }: Props) {
     const { data, setData, post, processing, errors } = useForm<{
         customer_name: string;
-        phone_number: string;
+        phone_number?: string;
         group_type: GroupType;
         play_game: boolean;
     }>({
@@ -103,7 +103,6 @@ export default function Create({ pricing }: Props) {
                             }
                             placeholder="e.g. 08012345678"
                             className="w-full rounded-xl border-slate-300 border-2 py-2.5 px-3.5 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                            required
                         />
                         {errors.phone_number && (
                             <p className="text-xs text-red-600 mt-1">

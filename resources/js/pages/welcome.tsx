@@ -26,51 +26,6 @@ const bannerSlides = [
     },
 ];
 
-// const carouselImages = [
-//     {
-//         id: 1,
-//         src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
-//         alt: "Code",
-//         title: "Clean Architecture",
-//         category: "Backend",
-//     },
-//     {
-//         id: 2,
-//         src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
-//         alt: "Editor",
-//         title: "Type Safe Codebase",
-//         category: "TypeScript",
-//     },
-//     {
-//         id: 3,
-//         src: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80",
-//         alt: "Team",
-//         title: "Collaborative Workflow",
-//         category: "Team",
-//     },
-//     {
-//         id: 4,
-//         src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
-//         alt: "Stats",
-//         title: "Analytics & SEO",
-//         category: "Growth",
-//     },
-//     {
-//         id: 5,
-//         src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80",
-//         alt: "Editor",
-//         title: "Type Safe Codebase",
-//         category: "TypeScript",
-//     },
-//     {
-//         id: 6,
-//         src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
-//         alt: "Stats",
-//         title: "Analytics & SEO",
-//         category: "Growth",
-//     },
-// ];
-
 export default function Welcome() {
     // const { auth } = usePage().props;
 
@@ -82,7 +37,7 @@ export default function Welcome() {
             <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#6b0501] to-[#c72d06] text-white text-center">
                 <div className="max-w-4xl mx-auto space-y-4">
                     <h1 className="text-4xl font-extrabold tracking-tight">
-                        Father Blessing Children Games Play
+                        Pastor Blessing Children Games Play
                     </h1>
                     <p className="text-slate-200 text-lg font-light max-w-2xl mx-auto">
                         Welcome to our game gallery! Explore a world of fun and

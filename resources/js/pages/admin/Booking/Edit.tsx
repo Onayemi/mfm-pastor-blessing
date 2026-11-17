@@ -7,7 +7,7 @@ type GroupType = "adult" | "teenage" | "children";
 interface Booking {
     id: number;
     customer_name: string;
-    phone_number: string;
+    phone_number?: string;
     group_type: GroupType;
     play_game: boolean;
 }
@@ -58,7 +58,9 @@ export default function Edit({ booking, pricing }: Props) {
 
     return (
         <div className="min-h-screen bg-slate-100 py-10 px-4 sm:px-6">
-            <Head title={`Edit Ticket #${booking.id} - Pastor Blessing Admin`} />
+            <Head
+                title={`Edit Ticket #${booking.id} - Pastor Blessing Admin`}
+            />
 
             <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-md p-6 sm:p-8 border border-slate-200">
                 <div className="flex justify-between items-center border-b pb-4 mb-6">
@@ -111,7 +113,6 @@ export default function Edit({ booking, pricing }: Props) {
                                 setData("phone_number", e.target.value)
                             }
                             className="w-full rounded-xl border-slate-300 border-2 py-2.5 px-3.5 text-sm shadow-sm focus:border-red-500 focus:ring-red-500"
-                            required
                         />
                         {errors.phone_number && (
                             <p className="text-xs text-red-600 mt-1">
