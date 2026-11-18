@@ -347,7 +347,7 @@ export default function Index({ bookings, metrics, filters, flash }: Props) {
                                                 className="h-10 w-10 mx-auto"
                                             />
                                             <span>
-                                                Pastor Blessing Ticket Pass{" "}
+                                                Pastor Blessing Ticket Pass{""}
                                             </span>
                                         </div>
                                     </h2>

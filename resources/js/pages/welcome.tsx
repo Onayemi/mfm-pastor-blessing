@@ -1,14 +1,11 @@
 import BannerSlider from "@/components/nav/BannerSlider";
-import ImageCarousel from "@/components/nav/ImageCarousel";
 import ImageCarouselSlider from "@/components/nav/ImageCarouselSlider";
-import LogoCarousel from "@/components/nav/LogoCarousel";
-import PricingTable from "@/components/nav/PricingTable";
 import MainLayout from "@/layouts/main-layout";
 
 const bannerSlides = [
     {
         id: 1,
-        image: "/images/banners/banner3.jpg",
+        image: "/images/banners/banner1.png",
         // image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80",
         // title: "Build Modern Apps with Laravel & React",
         // subtitle:
@@ -22,7 +19,11 @@ const bannerSlides = [
     },
     {
         id: 3,
-        image: "/images/banners/banner1.jpg",
+        image: "/images/banners/banner3.jpg",
+    },
+    {
+        id: 4,
+        image: "/images/banners/banner4.png",
     },
 ];
 
@@ -53,12 +54,7 @@ export default function Welcome() {
             <ImageCarouselSlider />
 
             {/* Logo Carousel Slide */}
-            <LogoCarousel />
-
-            {/* <PricingTable /> */}
-
-            {/* Multi-item Image Carousel */}
-            {/* <ImageCarousel items={carouselImages} /> */}
+            {/* <LogoCarousel /> */}
         </MainLayout>
     );
 }

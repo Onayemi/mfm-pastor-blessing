@@ -15,22 +15,18 @@ import PageHero from "@/components/nav/PageHero";
 export default function ContactPage() {
     // Configuration details
     const contactInfo = {
-        companyName: "PROMISED LAND TRAVELS AND TOURS",
-        address: "Carrefou Acacias, Yaounde, Cameroon",
-        // cityState: "Lagos, Nigeria",
-        phone: "237653033320",
-        whatsapp: "237653033320",
-        email: "support@promiselandtravel.com",
-        hours: [
-            { days: "Monday – Friday", time: "8:00 AM – 6:00 PM" },
-            { days: "Saturday", time: "9:00 AM – 2:00 PM" },
-            { days: "Sunday & Public Holidays", time: "Closed" },
-        ],
+        companyName: "MFM Pastor Blessing",
+        address:
+            "Open Ground By Onike Market Andoyi Street, Onike, Yaba, Lagos",
+        phone: "+2347033330882",
+        whatsapp: "2347033330882",
+        email: "support@pastorblessing.com",
+        hours: [{ days: "Monday – Sunday", time: "8:00 AM – 6:00 PM" }],
         // Embed URL for Google Maps
         mapEmbedUrl:
-            "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3980.855579803723!2d11.48597382310251!3d3.8411636985130153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCarrefou%20Acacias%2C%20Yaounde%2C%20Cameroon!5e0!3m2!1sen!2sng!4v1794648284254!5m2!1sen!2sng",
+            "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31712.48790091987!2d3.369125042382896!3d6.51396518683262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMFM%20open%20ground%20by%20onike%20market%20andoyi%20street%20onike%20yaba%20lagos!5e0!3m2!1sen!2sng!4v1795000542621!5m2!1sen!2sng",
         googleMapsDirectionsUrl:
-            "https://maps.google.com/?q=Carrefou+Acacias+Yaounde+Cameroon",
+            "https://maps.google.com/?q=MFM+20open+ground+by+onike+market+andoyi+street+onike+yaba+lagos",
     };
 
     return (

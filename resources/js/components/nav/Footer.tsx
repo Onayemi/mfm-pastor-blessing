@@ -3,30 +3,26 @@ import React, { useState } from "react";
 // Reusable Footer Links Configuration
 const FOOTER_LINKS = [
     {
-        title: "Company",
+        title: "Company Link",
         links: [
-            { label: "About", href: "/about" },
-            { label: "Careers", href: "#careers" },
-            { label: "Press & Media", href: "#press" },
-            { label: "Blog & Travel News", href: "#blog" },
+            { label: "About Us", href: "/about" },
+            { label: "Contact Us", href: "/contact" },
+            { label: "Blogs", href: "#" },
         ],
     },
     {
-        title: "Services",
+        title: "DR D.K. Olukoya Books",
         links: [
-            { label: "Flight Booking", href: "#flight-booking" },
-            { label: "Hotel Reservations", href: "#hotel-reservations" },
-            { label: "Visa Assistance", href: "#visa-assistance" },
-            { label: "Airport Transfers", href: "#car-rentals" },
+            { label: "mfmebooks.com", href: "https://mfmebooks.com/" },
+            { label: "Dr. Olukoya ebook", href: "https://www.dkoebooks.com/" },
         ],
     },
     {
         title: "Support & Legal",
         links: [
-            { label: "Help Center & FAQs", href: "#faq" },
-            { label: "Terms & Conditions", href: "#terms" },
+            { label: "Help Center & FAQs", href: "/contact" },
+            { label: "Terms & Conditions", href: "#" },
             { label: "Privacy Policy", href: "#privacy" },
-            { label: "Refund Policy", href: "#refunds" },
         ],
     },
 ];
@@ -60,15 +56,6 @@ const SOCIAL_ICONS = [
             </svg>
         ),
     },
-    {
-        name: "LinkedIn",
-        href: "https://linkedin.com",
-        svg: (
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-        ),
-    },
 ];
 
 export default function Footer() {
@@ -86,7 +73,7 @@ export default function Footer() {
     return (
         <footer className="bg-red-900 text-slate-300 font-sans border-t border-red-800">
             {/* Top Newsletter Banner */}
-            <div className="bg-[#700212] text-white py-10 px-4 sm:px-6 lg:px-8">
+            {/* <div className="bg-[#700212] text-white py-10 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="text-center md:text-left">
                         <h3 className="text-2xl font-bold tracking-tight">
@@ -118,7 +105,7 @@ export default function Footer() {
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> */}
 
             {/* Main Footer Links Container */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-10">
@@ -143,10 +130,11 @@ export default function Footer() {
 
                         <div className="text-xs text-white space-y-1.5 pt-2">
                             <p>
-                                📍 12 Victoria Island Expressway, Lagos, Nigeria
+                                📍 Open Ground By Onike Market Andoyi Street,
+                                Onike, Yaba, Lagos
                             </p>
-                            <p>📞 Support line: +234 (0) 703 333 0882</p>
-                            <p>✉️ Email: support@ajala.ng</p>
+                            <p>📞 Support line: +234 (0)703 333 0882</p>
+                            <p>✉️ Email: support@pastorblessing.com</p>
                         </div>
                     </div>
 
@@ -161,6 +149,8 @@ export default function Footer() {
                                     <li key={link.label}>
                                         <a
                                             href={link.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="hover:text-white transition"
                                         >
                                             {link.label}
@@ -182,29 +172,6 @@ export default function Footer() {
                         © {new Date().getFullYear()} PastorBlessing. All rights
                         reserved.
                     </div>
-
-                    {/* Payment Gateways & Cards */}
-                    {/* <div className="flex flex-col sm:flex-row items-center gap-3">
-                        <span className="text-xs text-slate-400 font-medium">
-                            Secured Payment by:
-                        </span>
-                        <div className="flex items-center gap-2 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
-                            <span className="text-xs font-bold text-emerald-400 tracking-wider">
-                                Paystack
-                            </span>
-                            <span className="text-slate-600">|</span>
-                            <span className="text-xs font-black italic text-blue-400">
-                                VISA
-                            </span>
-                            <div className="flex -space-x-1 items-center">
-                                <div className="w-3.5 h-3.5 bg-red-500 rounded-full opacity-90"></div>
-                                <div className="w-3.5 h-3.5 bg-amber-400 rounded-full opacity-90"></div>
-                            </div>
-                            <span className="text-xs font-bold text-teal-400 italic">
-                                Verve
-                            </span>
-                        </div>
-                    </div> */}
 
                     {/* Social Media Links */}
                     <div className="flex items-center gap-3 text-slate-400">

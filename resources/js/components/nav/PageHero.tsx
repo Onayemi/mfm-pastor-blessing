@@ -8,7 +8,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle, badge }: PageHeroProps) {
     return (
-        <div className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#04658e] to-[#04409b] text-white text-center">
+        <div className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#ec4022] to-[#d64304] text-white text-center">
             <div className="max-w-4xl mx-auto space-y-4">
                 {badge && (
                     <span className="inline-block text-xs font-bold uppercase tracking-widest text-amber-300 bg-amber-400/20 px-3.5 py-1.5 rounded-full">
